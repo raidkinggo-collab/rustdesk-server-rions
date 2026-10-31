@@ -6,7 +6,7 @@ Adds the server-side secure handshake for API-account signed-in clients (RustDes
 >= 1.4.1). Without it, logged-in clients fail to connect with
 `Failed to secure tcp: deadline has elapsed` (rustdesk/rustdesk#16691).
 
-CI builds `ghcr.io/vinyljackers/rustdesk-server-rions:latest`.
+CI builds `ghcr.io/raidkinggo-collab/rustdesk-server-rions:latest`.
 
 ## Deploy (Synology / docker compose)
 
@@ -15,7 +15,7 @@ when the server has a key:
 
 ```yaml
   hbbs:
-    image: ghcr.io/vinyljackers/rustdesk-server-rions:latest
+    image: ghcr.io/raidkinggo-collab/rustdesk-server-rions:latest
     command: hbbs -k _
     network_mode: host
     volumes:
